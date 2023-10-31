@@ -60,4 +60,6 @@ for (var weekContainer of weekContainers) {
     children[1].classList.remove("closed");
     children[2].classList.remove("closed");
   })
+
+
 }

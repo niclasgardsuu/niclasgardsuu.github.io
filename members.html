@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <script src="main.js" defer></script>
+    <script>
+      function jakob() {
+        var audio = new Audio('sound/swejs.mp3');
+        audio.play();
+      }
+    </script>
     <title>Document</title>
   </head>
   <body>
@@ -25,7 +31,7 @@
           <img class="person" src="img/robb.svg" style="width: 300px;"/>
         </div>
         <div class="person-container">
-          <div class="name">Jakob Paulsson</div>
+          <div class="name" onmouseover="jakob()">Jakob Paulsson</div>
           <img class="person" src="img/jag.svg"/>
         </div>
         <div class="person-container">
