@@ -6,6 +6,15 @@ body {
     margin: 0px;
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@keyframes fadeOut {
+    0% { opacity: 1;}
+    100% { opacity: 0}
+}
 
 .persons-container {
     display: flex;
@@ -96,7 +105,6 @@ body {
     padding-top: 120px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     min-height: 1000px;
     background: linear-gradient(to top, rgba(0,183,234,1) 0px, rgba(1, 0, 51, 0.95) 2000px);
 }
@@ -119,6 +127,7 @@ body {
     height: 20px;
     top: 20px;
     margin-top: 35px;
+    animation: fadeIn 1s;
 }
 
 .dotted-line {
@@ -149,9 +158,6 @@ body {
     color: white;
 }
 
-.week:hover {
-    cursor: pointer;
-}
 .week-description {
     z-index: 999;
     padding: 30px;
@@ -159,7 +165,8 @@ body {
     background-color: var(--custom-red);
     border-radius: 20px;
     color: white;
-    font-size: 40px
+    font-size: 40px;
+    animation: fadeIn 1s;
 }
 
 .earth-overlap {

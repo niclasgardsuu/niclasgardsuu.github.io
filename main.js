@@ -42,15 +42,21 @@ for (var description of descriptions) {
 }
 
 
+
 for (var weekContainer of weekContainers) {
   let children = weekContainer.children
   let week = children[0].children[0]
-  week.addEventListener("click", () => {
+  week.addEventListener("mouseenter", () => {
     for (var weekContainer of weekContainers) {
       let currentChildren = weekContainer.children
       currentChildren[1].classList.add("closed");
       currentChildren[2].classList.add("closed");
     }
+    children[1].classList.remove("closed");
+    children[2].classList.remove("closed");
+  })
+
+  week.addEventListener("mouseout", () => {
     children[1].classList.remove("closed");
     children[2].classList.remove("closed");
   })
