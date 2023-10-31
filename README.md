@@ -1,6 +1,6 @@
 # Software Engineering Project Progress
 ## Group 1
-Niclas Gärds, Robert Martinis, Jakob Paulsson, Max Sundström, Ludvig Westerholm
+Niclas Gärds, Robert Martinis, Jakob Paulsson, Johannes Sandström, Max Sundström
 
 ## Content
 On this website there will be updates on the progress of the project that our\
