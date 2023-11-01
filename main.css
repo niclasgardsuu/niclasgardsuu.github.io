@@ -44,6 +44,7 @@ body {
     height: 400px;
 }
 
+
 .house {
     height: 100%;
     position: relative;
@@ -83,6 +84,7 @@ body {
     border: none;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     text-decoration: none;
 }
@@ -96,6 +98,8 @@ body {
     background-color: rgb(161, 161, 161);
 }
 
+
+
 .header-line {
     border-left: 4px solid gray;
     height: 100%;
@@ -105,7 +109,6 @@ body {
     padding-top: 120px;
     display: flex;
     flex-direction: column;
-    min-height: 1000px;
     background: linear-gradient(to top, rgba(0,183,234,1) 0px, rgba(1, 0, 51, 0.95) 2000px);
 }
 
@@ -186,4 +189,38 @@ body {
 .earth {
     height: 400px;
     background-color: rgb(23, 58, 0);
+}
+
+
+@media screen and (max-width: 800px) {
+    .house-container {
+        height: 200px;
+    }
+
+    .header{
+        height: 50px;
+    }
+
+    .header-element {
+        font-size: 16px;
+    }
+
+    .persons-container {
+        flex-direction: column;
+    }
+
+    .name {
+        font-size: 12px;
+        color: white;
+        padding-top: 5%;
+    }
+
+    #niclas {
+        color:brown;
+    }
+
+    .earth {
+        height: 600px;
+    }
+
 }

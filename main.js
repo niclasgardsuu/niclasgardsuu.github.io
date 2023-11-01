@@ -30,7 +30,9 @@ for (var description of descriptions) {
   weekDescription.innerHTML = description
 
   leftContainer.appendChild(week);
-  leftContainer.appendChild(dottedLine);
+  if(descriptions[descriptions.length-1] != description) {
+    leftContainer.appendChild(dottedLine);
+  }
 
   weekContainer.appendChild(leftContainer);
   weekContainer.appendChild(line);
@@ -40,6 +42,7 @@ for (var description of descriptions) {
 
   currentWeek--;
 }
+
 
 
 
