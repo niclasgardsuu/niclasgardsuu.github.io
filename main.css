@@ -4,6 +4,7 @@
 
 body {
     margin: 0px;
+    background-color: rgb(23, 58, 0);
 }
 
 @keyframes fadeIn {
