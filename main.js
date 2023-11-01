@@ -6,7 +6,8 @@ let descriptions = ["Vecka 53 test134",
                     "Vecka 49 test3",
                     "Vecka 48 test4",
                     "Vecka 47 test5"]
-let currentWeek = 47 + descriptions.length - 1;
+descriptions = descriptions.reverse();
+let currentWeek = 47;
 
 for (var description of descriptions) {
   let weekContainer = document.createElement("div");
@@ -40,7 +41,7 @@ for (var description of descriptions) {
 
   document.getElementById("weeks-container").appendChild(weekContainer)
 
-  currentWeek--;
+  currentWeek++;
 }
 
 
