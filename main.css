@@ -54,6 +54,21 @@ body {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
+.grill {
+    height: 40%;
+    z-index: 999;
+    position: relative;;
+    margin-left: -80px;
+}
+
+.grillmaster {
+    height: 40%;
+    z-index: 999;
+    position: relative;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .logo {
     height: 100%;
     margin-right: 5px;
@@ -222,6 +237,10 @@ body {
 
     .earth {
         height: 600px;
+    }
+
+    .grill {
+        margin-left: -40px;
     }
 
 }
