@@ -30,9 +30,7 @@ for (var description of descriptions) {
   weekDescription.innerHTML = description
 
   leftContainer.appendChild(week);
-  if(descriptions[descriptions.length-1] != description) {
-    leftContainer.appendChild(dottedLine);
-  }
+  leftContainer.appendChild(dottedLine);
 
   weekContainer.appendChild(leftContainer);
   weekContainer.appendChild(line);
