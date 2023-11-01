@@ -213,6 +213,10 @@ body {
         height: 200px;
     }
 
+    .house {
+        margin-left: 0px;
+    }
+
     .header{
         height: 50px;
     }
