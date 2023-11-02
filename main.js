@@ -1,5 +1,5 @@
-let weekContainers = document.getElementsByClassName("week-container");
-let descriptions = ["Vecka 53 test134",
+const weekContainers = document.getElementsByClassName("week-container");
+const descriptions = ["Vecka 53 test134",
                     "Vecka 52 test12",
                     "Vecka 51 test7",
                     "Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2",
@@ -8,24 +8,24 @@ let descriptions = ["Vecka 53 test134",
                     "Vecka 47 test5"]
 let currentWeek = 47 + descriptions.length - 1;
 
-for (var description of descriptions) {
-  let weekContainer = document.createElement("div");
+for (const description of descriptions) {
+  const weekContainer = document.createElement("div");
   weekContainer.className = "week-container";
   
-  let leftContainer = document.createElement("div");
+  const leftContainer = document.createElement("div");
   leftContainer.className = "left-container";
   
-  let week = document.createElement("button");
+  const week = document.createElement("button");
   week.className = "week";
   week.innerHTML = "V" + currentWeek;
   
-  let dottedLine = document.createElement("div");
+  const dottedLine = document.createElement("div");
   dottedLine.className = "dotted-line";
 
-  let line = document.createElement("vl");
+  const line = document.createElement("vl");
   line.className = "line closed";
   
-  let weekDescription = document.createElement("div");
+  const weekDescription = document.createElement("div");
   weekDescription.className = "week-description closed";
   weekDescription.innerHTML = description
 
@@ -44,12 +44,12 @@ for (var description of descriptions) {
 
 
 
-for (var weekContainer of weekContainers) {
-  let children = weekContainer.children
-  let week = children[0].children[0]
+for (const weekContainer of weekContainers) {
+  const children = weekContainer.children
+  const week = children[0].children[0]
   week.addEventListener("mouseenter", () => {
-    for (var weekContainer of weekContainers) {
-      let currentChildren = weekContainer.children
+    for (const weekContainer of weekContainers) {
+      const currentChildren = weekContainer.children
       currentChildren[1].classList.add("closed");
       currentChildren[2].classList.add("closed");
     }
