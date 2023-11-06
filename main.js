@@ -1,12 +1,7 @@
 const weekContainers = document.getElementsByClassName("week-container");
-const descriptions = ["Vecka 53 test134",
-                    "Vecka 52 test12",
-                    "Vecka 51 test7",
-                    "Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2 Vecka 50 test2",
-                    "Vecka 49 test3",
-                    "Vecka 48 test4",
-                    "Vecka 47 test5"]
-let currentWeek = 47 + descriptions.length - 1;
+const descriptions = ["Made some changes to the progress website. We added three different subpages, one for Home, Progress, and Group Members.<br><br>We have looked at different data sets for recipes and ingredients and found one that contains ingredients, cook time, ratings, and images.<br><br>We also created a sketch for the recipe application in Figma.",
+                      "We initialized the progress website."]
+let currentWeek = 44 + descriptions.length - 1;
 
 for (const description of descriptions) {
   const weekContainer = document.createElement("div");
@@ -47,7 +42,7 @@ for (const description of descriptions) {
 for (const weekContainer of weekContainers) {
   const children = weekContainer.children
   const week = children[0].children[0]
-  week.addEventListener("mouseenter", () => {
+  week.addEventListener("mousedown", () => {
     for (const weekContainer of weekContainers) {
       const currentChildren = weekContainer.children
       currentChildren[1].classList.add("closed");
@@ -56,11 +51,4 @@ for (const weekContainer of weekContainers) {
     children[1].classList.remove("closed");
     children[2].classList.remove("closed");
   })
-
-  week.addEventListener("mouseout", () => {
-    children[1].classList.remove("closed");
-    children[2].classList.remove("closed");
-  })
-
-
 }
