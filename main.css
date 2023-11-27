@@ -240,6 +240,73 @@ body {
   right: 0px;
 }
 
+.progress-button-align {
+  position: absolute;
+  top: 210px;
+  left: 500px;
+  transform: translate(-50%,-50%);
+}
+
+.members-button-align {
+  position: absolute;
+  top: 210px;
+  left: 900px;
+  transform: translate(-50%,-50%);
+}
+
+.cloud-text {
+  position: absolute;
+  left:50%;
+  transform: translate(-50%,-50%);
+  bottom: 10px;
+  z-index: 10000;
+}
+
+#arrow {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid black;
+  position: absolute;
+  left: 70%;
+  transform: translate(-50%,-80%);
+  top: 0;
+}
+
+#cloud {
+  background: rgba(255, 255, 255);
+  position: absolute;
+  width: 300px; 
+  height: 100px;
+  border-radius: 150px;	
+  box-shadow: 10px 10px rgba(0,0,0,0.2);
+}
+
+#cloud:after {
+  content: '';
+  background: rgba(255, 255, 255);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+  z-index: 0;
+}
+
+#cloud:before {
+  content: '';
+  background: rgba(255, 255, 255);
+  position: absolute;
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+  top: -90px;
+  right: 40px;
+  z-index: 0;
+}
+
 @media screen and (max-width: 768px) {
   .week {
     font-size: 20px;
